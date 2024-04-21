@@ -1,22 +1,27 @@
-/*Products Shopping Page */
+import React from "react";
+import { useContext } from "react";
+import { CartContext } from "../../content/CartContent";
 
-import useState from "react";
-import "./Shop.css";
-import product from "../shop/Product";
-import { PRODUCTS } from "../../products";
+function Product({ data }) {
+  const { productImage, description, price, id, stops, duration, productName } = data;
+  const { addToCart, cart } = useContext(CartContext);
+  let itemQuantity = cart[id];
 
-export function Shop() {
   return (
-    <div className="shop">
-      <div className="shopTitle">
-        <h1>Synth Shop</h1>
+    <div className="product">
+      <img src={productImage} />
+      <div className="description">
+        <p>{productName} ({duration})</p>
+        <p>{description}</p>
+        <p>Price: ${price}</p>
+        <p>Stops:{stops} </p>
+        
       </div>
-
-      <div className="products">
-        {PRODUCTS.map((product) => (
-          <product key={product.id} data={product} />
-        ))}
-      </div>
+      <button className="addToCartBttn" onClick={() => addToCart(id)}>
+        Purchase Ticket {itemQuantity > 0 && <>({itemQuantity})</>}
+      </button>
     </div>
   );
 }
+
+export default Product;

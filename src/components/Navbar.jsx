@@ -7,11 +7,12 @@ export function Navbar() {
   return (
     <div className="navbar">
       <div className="links">
-        <Link to={"/"}>Shop</Link>
+        <Link to={"/"}>Available Routes</Link> {/*Homepage */}
+        <Link to={"/.ticketInfo"}>Ticket Info</Link>
         <Link to={"/cart"}>
-          <ShoppingCart size={32} />
+          <ShoppingCart size={32} /> {/*ticket purchase */}
         </Link>
-        <Link to={"/contact"}>Contact</Link>
+        {/*<Link to={"/contact"}>Contact</Link>*/}
       </div>
     </div>
   );
