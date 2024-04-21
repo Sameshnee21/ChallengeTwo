@@ -8,7 +8,7 @@ export function Navbar() {
     <div className="navbar">
       <div className="links">
         <Link to={"/"}>Available Routes</Link> {/*Homepage */}
-        <Link to={"/.ticketInfo"}>Ticket Info</Link>
+        <Link to={"/.ticketInfo"}>Route Info</Link>
         <Link to={"/cart"}>
           <ShoppingCart size={32} /> {/*ticket purchase */}
         </Link>

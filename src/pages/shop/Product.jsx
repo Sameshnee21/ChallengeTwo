@@ -1,6 +1,9 @@
 import React from "react";
 import { useContext } from "react";
+import {Routes, Route, useParams} from "react-router-dom";
 import { CartContext } from "../../content/CartContent";
+
+
 
 function Product({ data }) {
   const { productImage, description, price, id, stops, duration, productName } = data;
