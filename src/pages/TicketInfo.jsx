@@ -12,11 +12,11 @@ export function TicketInfo() {
         <h1>Public Transit Route Planner</h1>
       </div>
 
-      <div className="products">
+     <div className="products">
         {PRODUCTS.map((product) => (
           <Product key={product.id} data={product} />
         ))}
-      </div>
+    </div>
     </div>
   );
 }

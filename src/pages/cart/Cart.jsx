@@ -1,13 +1,22 @@
 /* Shopping Cart Page */
 
 import React from "react";
+
+import {Link,Routes, Route, useNavigate,} from 'react-router-dom'; //useNavigate test from bobbyhadz tutorial
+
 import "./Cart.css";
 import CartItem from "./CartItem";
 import { useContext } from "react";
 import { CartContext } from "../../content/CartContent";
 import { PRODUCTS } from "../../products";
 
+function handleClick() { //Checkout button test
+  alert('Checked out successful!');
+}
+
 export function Cart() {
+  const navigate = useNavigate();
+
   const { cart, getTotalAmount } = useContext(CartContext);
   let total = getTotalAmount();
 
@@ -27,8 +36,8 @@ export function Cart() {
       {total > 0 ? (
         <div className="checkout">
           <p>Subtotal: ${total}</p>
-          <button>Checkout</button> {/* button to process tickets  */}
-          <button>Continue Shopping</button> {/*back button to home page here  */}
+          <button onClick={handleClick} onClick={()=> navigate(-1)}>Checkout</button> {/* button to process tickets, needs to give a message that payment was successful*/}
+          <button onClick={() => navigate(-1)}>Continue Shopping</button> {/*back button to home page here  */}
         </div>
       ) : (
         <div className="checkout">
