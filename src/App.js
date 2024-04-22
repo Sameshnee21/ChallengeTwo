@@ -35,7 +35,7 @@ function App() {
           <Route path="/info/:name" element=< ImageInfo data={imageData} /> />*/}
 
             <Route path="/" element={<Shop />} />
-            <Route path= "/ticketInfo" element={<Product/>}/>
+            <Route path= "/ticketInfo" element={<ticketInfo/>}/>
             <Route path="/cart" element={<Cart />} />
             
     
