@@ -14,6 +14,8 @@ function handleClick() { //Checkout button test
   alert('Checked out successful!');
 }
 
+
+
 export function Cart() {
   const navigate = useNavigate();
 
@@ -36,13 +38,14 @@ export function Cart() {
       {total > 0 ? (
         <div className="checkout">
           <p>Subtotal: ${total}</p>
-          <button onClick={handleClick}>Checkout</button> {/* button to process tickets, needs to give a message that payment was successful*/}
+          <button onClick={handleClick}>Checkout</button> {/* button to process tickets, needs to give a message that payment was successful AND REFRESH PAGE*/}
+          
           <button onClick={() => navigate(-1)}>Continue Shopping</button> {/*back button to home page here  */}
         </div>
       ) : (
         <div className="checkout">
           <h4>No tickets were purchased.</h4>
-          <button onClick={() => navigate(-1)}>Continue shopping</button>
+          <button onClick={() => navigate(-1)}>Continue shopping</button> {/*back to homepage */}
         </div>
       )}
     </div>
