@@ -2,9 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import {Routes, Route, Link} from "react-router-dom";
 import { CartContext } from "../../content/CartContent";
-import {Coast} from "../../pages/Coast";
 import {Suburb} from "../../pages/Suburb";
-import {Night} from "../../pages/Night";
 import {Downtown} from "../../pages/Downtown";
 
 
@@ -23,7 +21,7 @@ function Product({ data }) {
         <p>Price: ${price}</p>
         <p>Stops:{stops} </p>
 
-        
+        {/*URL */}
         <Link to= {productName}>
         <button className="Info"> More Info</button>
         </Link>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import product1 from "./assets/products/1.png";
 import product2 from "./assets/products/2.png";
 import product3 from "./assets/products/3.png";
@@ -18,7 +19,7 @@ export const PRODUCTS = [
   },
   {
     id: 2,
-    productName: "Scenic Coastal Line",
+    productName: "Scenic Coastal Line", 
     description: "Enjoy breathtaking views of the coastline as you travel.",
     stops: 8,
     duration: "55 mins",
