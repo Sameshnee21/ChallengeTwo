@@ -9,7 +9,7 @@ import products from "./products";
 import "./App.css";
 import CartContextProvider from "./content/CartContent";
 import Product from "./pages/shop/Product";
-import Coast from "../src/pages/Coast";
+
 
 
 //Failed attemp of useParams

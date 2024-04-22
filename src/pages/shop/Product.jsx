@@ -4,6 +4,8 @@ import {Routes, Route, Link} from "react-router-dom";
 import { CartContext } from "../../content/CartContent";
 import {Suburb} from "../../pages/Suburb";
 import {Downtown} from "../../pages/Downtown";
+import {Coast} from "../../pages/Coast";
+import {Night} from "../../pages/Night";
 
 
 
@@ -22,7 +24,7 @@ function Product({ data }) {
         <p>Stops:{stops} </p>
 
         {/*URL */}
-        <Link to= {productName}>
+        <Link to= "./ticketInfo">
         <button className="Info"> More Info</button>
         </Link>
         <Routes>

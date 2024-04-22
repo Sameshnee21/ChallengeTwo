@@ -4,7 +4,7 @@
 import useState from "react";
 //import { VEG } from "./filter/veg";
 
-export function Vegan() {
+export function Coast() {
   return (
     <div className="shop">
       <div className="shopTitle">
@@ -19,7 +19,7 @@ export function Vegan() {
         <img src="Vegan3.png" alt="" />
       </div>
 
-      <div className="vegan">
+      <div className="coast">
         {/*{VEG.map((veg) => (*/}
           {/*<Veg key={veg.id} data={veg} />
         ))}*/}
