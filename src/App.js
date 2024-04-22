@@ -9,6 +9,7 @@ import products from "./products";
 import "./App.css";
 import CartContextProvider from "./content/CartContent";
 import Product from "./pages/shop/Product";
+import { useState } from "react";
 
 
 
@@ -25,6 +26,8 @@ import Product from "./pages/shop/Product";
 
 function App() {
 
+
+
   return (
     <div className="App">
       <CartContextProvider>
@@ -36,6 +39,7 @@ function App() {
 
             <Route path="/" element={<Shop />} />
             <Route path="/ticketInfo" element={<ticketInfo/>} />
+            <Route path="/ticketInfo/:info" element={<ticketInfo/>} />
             <Route path="/cart" element={<Cart />} />
             
     

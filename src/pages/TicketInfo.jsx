@@ -5,11 +5,14 @@ import "./Shop.css";
 import Product from "../shop/Product";
 import { PRODUCTS } from "../../products";
 
+
+
+
 export function TicketInfo() {
   return (
     <div className="shop">
       <div className="shopTitle">
-        <h1>Public Transit Route Planner</h1>
+        <h1>Information Desk</h1>
       </div>
 
      <div className="products">
