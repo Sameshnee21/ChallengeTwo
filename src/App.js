@@ -9,7 +9,7 @@ import products from "./products";
 import "./App.css";
 import CartContextProvider from "./content/CartContent";
 import Product from "./pages/shop/Product";
-import {Coast} from "./pages/Coast";
+import Coast from "../src/pages/Coast";
 
 //Failed attemp of useParams
 //React Router: A Beginners guide to useParams hook Tutorial used as a guide.
@@ -36,11 +36,10 @@ function App() {
             <Route path="/" element={<Shop />} />
             <Route path= "/ticketInfo" element={<Product/>}/>
             <Route path="/cart" element={<Cart />} />
+            
             {/*Getting ID from the URL */}
 
             
-            <Route path="/coast" element={<Coast />} />
-           
             <Route path="/cart" element={<Cart />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/cart" element={<Cart />} />
