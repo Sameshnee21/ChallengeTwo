@@ -3,6 +3,9 @@ import { useContext } from "react";
 import {Routes, Route, Link} from "react-router-dom";
 import { CartContext } from "../../content/CartContent";
 import {Coast} from "../../pages/Coast";
+import {Suburb} from "../../pages/Suburb";
+import {Night} from "../../pages/Night";
+import {Downtown} from "../../pages/Downtown";
 
 
 
@@ -21,12 +24,14 @@ function Product({ data }) {
         <p>Stops:{stops} </p>
 
         
-        <Link to="/coast">
+        <Link to= {productName}>
         <button className="Info"> More Info</button>
         </Link>
         <Routes>
-        <Route path="/coast" element={<Coast />} />
+        <Route path={productName} element={productName} />
       </Routes>
+
+    
         
       </div>
       <button className="addToCartBttn" onClick={() => addToCart(id)}>

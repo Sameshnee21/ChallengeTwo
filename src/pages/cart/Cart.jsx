@@ -27,8 +27,8 @@ export function Cart() {
       {total > 0 ? (
         <div className="checkout">
           <p>Subtotal: ${total}</p>
-          <button>Checkout</button>
-          <button>Continue Shopping</button>
+          <button>Checkout</button> {/* button to process tickets  */}
+          <button>Continue Shopping</button> {/*back button to home page here  */}
         </div>
       ) : (
         <div className="checkout">

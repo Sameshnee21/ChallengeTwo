@@ -1,7 +1,16 @@
-/*Coast Page */
 
-import React from "react";
+import useState from "react";
 
 export function Coast() {
-  return <div>Coast</div>;
+  return (
+    <div className="shop">
+      <div className="shopTitle">
+      <h2>Burrito</h2>
+      
+      </div>
+
+    
+      </div>
+  
+  );
 }
